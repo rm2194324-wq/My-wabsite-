@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BDG Game - Register Now & Get ₹500 Sign Up Bonus</title>
+    <meta name="description" content="BDG Game is India's most trusted gaming platform. Register now and get ₹500 sign up bonus. Play games and earn real money with secure withdrawals.">
+    <meta name="keywords" content="BDG Game, online gaming, earn money games, India gaming platform, sign up bonus">
+    <style>
+        /* Base Styles */
+        :root {
+            --primary: #c4933f;
+            --primary-dark: #8f5206;
+            --secondary: #242226;
+            --light: #fafafa;
+            --dark: #3a3a3a;
+            --gray: #696969;
+            --accent: #eec304;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+            background-image: url('https://bdgwin.one/wp-content/uploads/2025/03/Bdgwin-background.webp');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid var(--primary);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .site-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--dark);
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .login-btn, .register-btn {
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+        
+        .login-btn {
+            border: 2px solid var(--primary);
+            background-color: transparent;
+            color: var(--primary);
+        }
+        
+        .login-btn:hover {
+            background-color: rgba(196, 147, 63, 0.1);
+        }
+        
+        .register-btn {
+            background: linear-gradient(180deg, #FAE59F 0%, #C4933F 100%);
+            color: var(--primary-dark);
+            border: none;
+        }
+        
+        .register-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+        
+        .header-image {
+            height: 70px;
+            width: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(217, 172, 79, 0.8) 0%, rgba(0, 0, 0, 0.7) 34%), 
+                        url('https://bdgwin.one/wp-content/uploads/2025/03/BDG-Win-Lottery-Game-Cover.webp');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid var(--primary);
+        }
+        
+        .hero-logo {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+        }
+        
+        .hero-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--light);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .hero-btn {
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .hero-btn-primary {
+            background-color: var(--primary);
+            color: var(--primary-dark);
+        }
+        
+        .hero-btn-secondary {
+            border: 2px solid var(--light);
+            color: var(--light);
+            background-color: transparent;
+        }
+        
+        .hero-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .gift-code {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        
+        .gift-code strong {
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+        
+        /* Content Section */
+        .content {
+            background-color: rgba(58, 58, 58, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        h2 {
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 15px;
+            margin: 30px -40px 20px;
+            font-size: 1.8rem;
+            text-align: center;
+            border-radius: 0;
+        }
+        
+        h3 {
+            background-color: var(--gray);
+            color: var(--light);
+            padding: 12px;
+            margin: 25px -40px 15px;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: var(--primary);
+        }
+        
+        .content-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .content-btn {
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-decoration: none;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            background-color: transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .content-btn:hover {
+            background-color: var(--primary);
+            color: var(--primary-dark);
+        }
+        
+        /* Rating Section */
+        .rating-section {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .rating-stars {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .star {
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: var(--light);
+            padding: 40px 0 20px;
+            margin-top: 40px;
+            border-top: 3px solid var(--primary);
+        }
+        
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .footer-menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .footer-menu a {
+            color: var(--light);
+        }
+        
+        .footer-menu a:hover {
+            color: var(--accent);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .header-left {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            
+            .site-title {
+                margin-top: 10px;
+            }
+            
+            .header-image {
+                height: 50px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            h2, h3 {
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+            
+            .footer-menu {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="header-left">
+                <div class="logo">
+                    <div class="site-title">BDG Game</div>
+                </div>
+                <div class="nav-buttons">
+                    <a href="https://bdgipl.online/#/login" class="login-btn">Log in</a>
+                    <a href="https://bdgipl.online/#/register?invitationCode=4574715812664" class="register-btn">Register</a>
+                </div>
+            </div>
+            <div class="header-right">
+                <a href="https://bdgipl.online/#/register?invitationCode=4574715812664">
+                    <img src="https://i.postimg.cc/4HKDYv0V/images.png" alt="BDG Game" class="header-image">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-logo">
+                <img src="https://bdgwin.one/wp-content/uploads/2025/03/BDG-Win-Logo.webp" alt="BDG Game Logo">
+            </div>
+            <h1>BDG Game</h1>
+            <p>BDG Game is India's most trusted gaming platform. It offers various games where you can have fun and earn real money.</p>
+            <p><strong>Register Now & Get ₹500 Sign Up Bonus</strong></p>
+            <div class="hero-buttons">
+                <a href="https://bdgipl.online/#/register?invitationCode=4574715812664" class="hero-btn hero-btn-primary">Register Now</a>
+                <a href="https://bdgipl.online/#/download" class="hero-btn hero-btn-secondary">Download App</a>
+            </div>
+            <div class="gift-code">
+                <p>BDG Game Gift Code (Daily New Code)<br><strong>86B499CC1514DCE213620E658E471210</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content">
+            <p>Are you thinking of starting with BDG Game, a gaming platform where you can play games and get rewards? If so, you're in the right place.</p>
+            <p>Here we'll share all you need to know about the platform from signup to withdrawing your earnings. So no need to look back.</p>
+            <p>You also have to invest some money in the beginning and add some of your data like mobile numbers and bank details. So it's important to first learn all about the platform and then play safely.</p>
+            <p>So let's get started.</p>
+
+            <h2>What Is BDG Game?</h2>
+            <p>BDG Game is a gaming platform where you can have fun and earn real money. The best part is it offers various games, from classics to new favorites so no way to get bored.</p>
+            <p>With its user-friendly interface and seamless accessibility, BDG Game becomes a better option compared to other similar platforms.</p>
+            <p>In addition to its games library, BDG Game also offers refer and earn programs, where users can invite friends to join the platform and earn rewards for successful referrals. This can be your extra income.</p>
+            <p>Besides all this, it is a safe and secure platform making it a perfect choice to cash out real money.</p>
+
+            <h3>How To Sign Up On BDG Game?</h3>
+            <p>If you want to start making money on BDG Game the first step is to create your account. Signing up on BDG Game is a quick and easy process.</p>
+            <p>Simply follow these steps:</p>
+            <ul>
+                <li>Visit the official BDG Game Website.</li>
+                <li>Click anywhere on the home page to redirect login page.</li>
+                <li>Click on the register button below the login button.</li>
+                <li>Fill in the required details like phone number, password, and invitation code.</li>
+                <li>Tick mark on privacy agreement.</li>
+                <li>Click on the Register button.</li>
+                <li>Your account is created successfully.</li>
+            </ul>
+            <div class="content-buttons">
+                <a href="https://bdgipl.online/#/register?invitationCode=4574715812664" class="content-btn">Register Now</a>
+            </div>
+
+            <h3>How To Log In On BDG Game?</h3>
+            <p>Once you create your account on BDG Game you can easily login in it anytime. Here is a simple step to log in:</p>
+            <ul>
+                <li>Visit the BDG Game website</li>
+                <li>Click anywhere on the platform to redirect login page.</li>
+                <li>Enter your login credentials like phone number and password.</li>
+                <li>Click on the Login button.</li>
+                <li>You can now access your account.</li>
+            </ul>
+            <div class="content-buttons">
+                <a href="https://bdgipl.online/#/login" class="content-btn">BDG Game Log in</a>
+            </div>
+
+            <h2>How To Download The BDG Game App?</h2>
+            <p>If you're playing games on these platforms regularly you can also use their app which makes it easy and convenient to play games.</p>
+            <p>However, it is not available on Google Play Store so here is a guide on how to download the BDG Game app official version:</p>
+            <ul>
+                <li>Visit the official BDG Game platform website.</li>
+                <li>Click on the download icon located in the top right corner.</li>
+                <li>The download will start automatically and the APK file will be saved on your device.</li>
+            </ul>
+            <div class="content-buttons">
+                <a href="https://bdgipl.online/#/download" class="content-btn">Download App</a>
+            </div>
+
+            <!-- Rating Section -->
+            <div class="rating-section">
+                <div class="rating-stars">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p>Average rating <strong>4.7</strong> / 5. Vote count: <strong>3753</strong></p>
+                <p>No votes so far! Be the first to rate this post.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-menu">
+                <a href="https://bdgipl.online/privacy-policy">Privacy Policy</a>
+                <a href="https://bdgipl.online/responsible-gaming">Responsible Gaming</a>
+                <a href="https://bdgipl.online/affiliate-disclosure">Affiliate Disclosure</a>
+                <a href="https://bdgipl.online/terms-of-service">Terms Of Services</a>
+                <a href="https://bdgipl.online/disclaimer">Disclaimer</a>
+                <a href="https://bdgipl.online/contact-us">Contact Us</a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 <a href="https://bdgipl.online">BDG Game</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
